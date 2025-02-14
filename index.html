@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de San Valentín</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Fondo degradado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ff0066; /* Color más vibrante para el título */
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: fadeIn 4s ease-in-out;
+            text-shadow: 3px 3px 5px rgba(255, 105, 180, 0.8), 0 0 25px rgba(255, 182, 193, 1);
+        }
+
+        .message {
+            font-size: 2.5em;
+            color: #ffcc00; /* Color brillante para el mensaje */
+            margin: 20px 0;
+            animation: fadeIn 4s ease-in-out 1s;
+            text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.7), 0 0 15px rgba(255, 105, 180, 1);
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            font-size: 4em;
+        }
+
+        .heart {
+            font-size: 5em;
+            color: red;
+            animation: heartMove 5s ease-in-out infinite, glow 1.5s ease-in-out infinite alternate;
+        }
+
+        .rose {
+            font-size: 4.5em;
+            color: #ff1493;
+            animation: roseMove 6s ease-in-out infinite, glow 1.5s ease-in-out infinite alternate;
+        }
+
+        .bear {
+            font-size: 4.5em;
+            animation: bearMove 6s ease-in-out infinite, glow 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Movimiento del Corazón */
+        @keyframes heartMove {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(50px, -50px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Movimiento de la Rosa */
+        @keyframes roseMove {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(-60px, 40px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Movimiento del Oso */
+        @keyframes bearMove {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(70px, -40px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Efectos de brillo */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
+            50% { text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff; }
+            100% { text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
+        }
+
+        /* Estrellas flotantes */
+        .star {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 3em;
+            color: #FFD700;
+            animation: starAnimation 10s linear infinite;
+        }
+
+        .star:nth-child(odd) {
+            animation-duration: 8s;
+        }
+
+        .star:nth-child(even) {
+            animation-duration: 12s;
+        }
+
+        @keyframes starAnimation {
+            0% { opacity: 0; transform: translate(0, 0); }
+            50% { opacity: 1; transform: translate(300px, -300px); }
+            100% { opacity: 0; transform: translate(-300px, 300px); }
+        }
+
+        /* Corazones flotantes */
+        .floating-heart {
+            position: absolute;
+            color: red;
+            font-size: 3em;
+            animation: floatingHeartAnimation 6s ease-in-out infinite;
+        }
+
+        @keyframes floatingHeartAnimation {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(-30px); opacity: 0.8; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Ramo de Rosas (Emoji) */
+        .rose-bouquet {
+            font-size: 3em;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+    </style>
+    <style type="text/css">
+        .grande { font-size: 60px; }
+    </style>
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+<body>
+    <!-- Música -->
+    <audio autoplay="" loop="">
+        <source src="https://drive.google.com/uc?export=download&amp;id=15sM2lg5XGRnl5Z0s2HPNptA2HqHjfspW" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+    
+    <!-- Título de San Valentín -->
+    <h1>Feliz Día de San Valentín "Tais"</h1>
+    
+    <!-- Mensaje -->
+    <div class="message">
+        <p>Te amo mucho, eres todo para mí 💖</p>
+    </div>
+
+    <!-- Ramo de Rosas (varias rosas) -->
+    <div class="rose-bouquet">
+        <div class="rose">🌹</div>
+        <div class="rose">🌹</div>
+        <div class="rose">🌹</div>
+        <div class="rose">🌹</div>
+        <div class="rose">🌹</div>
+        <div class="rose">🌹</div>
+    </div>
+
+    <!-- Corazón animado -->
+    <div class="heart">❤️</div>
+
+    <!-- Imágenes (Emojis) -->
+    <div class="img-container">
+        <div class="rose">🌹</div>
+        <div class="bear">🧸</div>
+    </div>
+    
+    <!-- Estrellas flotantes -->
+    <div class="star" style="top: 20%; left: 10%;">✨</div>
+    <div class="star" style="top: 30%; left: 70%;">💫</div>
+    <div class="star" style="top: 60%; left: 40%;">🌟</div>
+    <div class="star" style="top: 80%; left: 20%;">✨</div>
+    <div class="star" style="top: 10%; left: 90%;">💫</div>
+
+    <!-- Corazones flotantes -->
+    <div class="floating-heart" style="top: 40%; left: 15%;">❤️</div>
+    <div class="floating-heart" style="top: 60%; left: 60%;">❤️</div>
+    <div class="floating-heart" style="top: 80%; left: 80%;">❤️</div>
+
+
+
+</body></html>
