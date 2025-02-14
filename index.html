@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
     <meta charset="UTF-8">
@@ -18,12 +18,14 @@
             overflow: hidden;
             position: relative;
             color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         h1 {
             font-family: 'Courier New', Courier, monospace;
             color: #ff0066; /* Color más vibrante para el título */
-            font-size: 4em;
+            font-size: 3em; /* Ajusta el tamaño de la fuente */
             margin-bottom: 20px;
             animation: fadeIn 4s ease-in-out;
             text-shadow: 3px 3px 5px rgba(255, 105, 180, 0.8), 0 0 25px rgba(255, 182, 193, 1);
@@ -144,24 +146,47 @@
             margin-top: 30px;
         }
 
+        /* Ajuste de tamaño para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Ajusta el tamaño en pantallas más pequeñas */
+            }
+            .message {
+                font-size: 1.8em;
+            }
+            .rose-bouquet {
+                font-size: 2.5em;
+            }
+            .img-container {
+                flex-direction: column;
+            }
+            .heart, .rose, .bear {
+                font-size: 4em;
+            }
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            .message {
+                font-size: 1.5em;
+            }
+            .rose-bouquet {
+                font-size: 2em;
+            }
+            .img-container {
+                flex-direction: column;
+            }
+            .heart, .rose, .bear {
+                font-size: 3.5em;
+            }
+        }
+
     </style>
-    <style type="text/css">
-        .grande { font-size: 60px; }
-    </style>
-<style type="text/css">
-.grande { font-size: 60px; }
-</style>
-<script>
-// Escribir aqui el código Javascript
-</script>
 </head>
 <body>
-    <!-- Música -->
-    <audio autoplay="" loop="">
-        <source src="https://drive.google.com/uc?export=download&amp;id=15sM2lg5XGRnl5Z0s2HPNptA2HqHjfspW" type="audio/mp3">
-        Tu navegador no soporta la etiqueta de audio.
-    </audio>
-    
     <!-- Título de San Valentín -->
     <h1>Feliz Día de San Valentín "Tais"</h1>
     
@@ -201,6 +226,10 @@
     <div class="floating-heart" style="top: 60%; left: 60%;">❤️</div>
     <div class="floating-heart" style="top: 80%; left: 80%;">❤️</div>
 
-
-
-</body></html>
+    <!-- Reproductor de Audio -->
+    <audio autoplay loop>
+        <source src="https://rauljfj12.github.io/TAIS/assets/bajoelagua.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+</body>
+</html>
